@@ -38,13 +38,18 @@
                     <div class="cost-note">Thuế:</div>
                     <div class="cost-value-tax">${{mul data.sum 0.1}}</div>
                 </div>
-                <div class="calc-cost-item">
+                {{!-- <div class="calc-cost-item">
                     <div class="cost-note">Vận chuyển:</div>
-                    <div class="cost-value-deliver">${{mul data.sum 0.05}}</div>
-                </div>
+                    <div class="cost-value-deliver">$2.50</div>
+                </div> --}}
                 <div class="calc-cost-item">
                     <div class="cost-note">Tổng cộng:</div>
-                    <div class="cost-value-total">${{mul data.sum 1.15}}</div>
+                    $<div class="cost-value-total">{{mul data.sum 1.1}}</div>
+                </div>
+
+                <div class="calc-cost-item">
+                    <div class="cost-note">Tổng thanh toán:</div>
+                    <div class="cost-value-total-vnd">{{mulint (mul data.sum 1.1) 23000}}</div><span>&nbsp;VNĐ</span> 
                 </div>
             </div>
             </div>
@@ -68,12 +73,12 @@
             <div class="payment-choice">
                 <div class="payment-part-name">Phương thức thanh toán:</div>
                 <div class="col-12 checkboxes">
-                    <input class="checkbox-tools" type="radio" name="tools" id="tool-4">
+                    <input class="checkbox-tools" type="radio" name="tools" id="tool-4" checked> 
                     <label class="for-checkbox-tools" for="tool-4">
                         <i class="uil uil-crop-alt"></i>
                         Momo
-                    </label><!--
-                    --><input class="checkbox-tools" type="radio" name="tools" id="tool-5">
+                    </label>
+                    <input class="checkbox-tools" type="radio" name="tools" id="tool-5">
                     <label class="for-checkbox-tools" for="tool-5">
                         <i class="uil uil-brush-alt"></i>
                         Paypal
@@ -86,7 +91,7 @@
                 </div>
             </div>
             <div class="confirm-payment">
-                <a href="./product.html"><button class="blog-slider__button">THANH TOÁN</button></a>
+                <button class="blog-slider__button">THANH TOÁN</button>
             </div>
         </div>
     </div>

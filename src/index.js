@@ -39,8 +39,9 @@ app.engine('hbs', expresshbs({
     partialsDir: [__dirname + '/resources/views/partials/',
                   __dirname + '/resources/views/admin/' ],
     helpers: {
-        mul: function (qty, price) { return (price * qty).toFixed(3); },
-        sum: function (qty, num) { return parseFloat(qty) + parseFloat(num); },
+        mulint: function (qty, price) { return parseInt(price * qty); },
+        mul: function (qty, price) { return (price * qty).toFixed(2); },
+        sum: function (qty, num) { return (parseFloat(qty) + parseFloat(num)).toFixed(2); },
         isEmpty: function (item) { return item == null; },
         isAdmin: function (User) {
             return User == 'admin';

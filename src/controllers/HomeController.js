@@ -16,12 +16,12 @@ exports.getmenu = async (req, res, next) => {
 //     .then((resp) =>{
 //         resp.data.shoes.forEach((data)=>{
 //             item = {
-//                 color:[ 'rgb(255, 0, 0)','rgb(0, 255, 21)','rgb(0, 119, 255)','rgb(255, 217, 0)'],
+//                 color:[ 'blue','green','red','orange'],
 //                 description: data.description,
 //                 name: data.name,
 //                 price: data.price,
 //                 product_img: [data.image],
-//                 size: ['36','37','38','39','40','41','42','43']
+//                 size: ['38','39','40','41','42']
 //             }
 //             const A = async ()=>{
 //                 await db.collection('products').add(item);
@@ -31,10 +31,4 @@ exports.getmenu = async (req, res, next) => {
 //         })
 //         res.json(datas);
 //     })
-//     const user = await db.collection('products').get();
-//         user.forEach((doc) => {
-//             doc.data().product_img.add('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1315882/air-zoom-pegasus-36-shield-mens-running-shoe-24FBGb__1_-removebg-preview.png')
-//             console.log(doc.data());
-
-//         });
 // }
