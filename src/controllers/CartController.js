@@ -152,7 +152,7 @@ exports.pay = async (req, res, next) => {
 
     }
     catch(e){
-        res.status(400).send(e);
+        res.send(e);
     }
 }
 

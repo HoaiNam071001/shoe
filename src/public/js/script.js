@@ -191,7 +191,7 @@ function changequantity2(e,size,color,price) {
 }
 
 $('.blog-slider__button').on('click',()=>{
-  var name,phone,loca;
+  var name,phone,address;
   name = $('#fullname').val()?$('#fullname').val():"Default";
   phone = $('#phonenumber').val()?$('#phonenumber').val():"Default";
   address = $('#location').val()?$('#location').val():"Default";
