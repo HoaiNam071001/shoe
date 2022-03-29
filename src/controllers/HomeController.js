@@ -3,12 +3,18 @@ const db = require('../config/db/DBconnection');
 const axios = require('axios');
 
 exports.getmenu = async (req, res, next) => {    
-    const product = await db.collection('products').get();
-    var data = [];
-    product.forEach((doc) => {
-        data.push({id:doc.id,...doc.data()})
-    }); 
-    res.render('index',{data});
+    try{
+        const product = await db.collection('products').get();
+        var data = [];
+        product.forEach((doc) => {
+            data.push({id:doc.id,...doc.data()})
+        }); 
+        res.render('index',{data});
+    }
+    catch(e){
+        res.send(e);
+    }
+    
 }
 // exports.add = async (req, res, next) => {  
 //     var datas = [] , item;  

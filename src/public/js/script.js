@@ -130,6 +130,9 @@ $('.buy-add-button-click').on('click',(e)=>{
       if(data === 'success'){
         alert('Thêm vào giỏ hàng thành công');
       }
+      else if(data === 'login'){
+        location.href = '/login';
+      }
     },
   });
 })

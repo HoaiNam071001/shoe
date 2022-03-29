@@ -114,8 +114,8 @@ exports.pay = async (req, res, next) => {
         }
         //Send the request and get the response
         const request = https.request(options, response => {
-            console.log(`Status: ${response.statusCode}`);
-            console.log(`Headers: ${JSON.stringify(response.headers)}`);
+            // console.log(`Status: ${response.statusCode}`);
+            // console.log(`Headers: ${JSON.stringify(response.headers)}`);
             response.setEncoding('utf8');
             response.on('data', async (body) => {
                 // console.log('Body: ');

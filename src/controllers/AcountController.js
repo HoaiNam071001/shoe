@@ -78,4 +78,5 @@ exports.loggout = (req, res, next) => {
             res.redirect('/');
         });
     }
+    else res.send('login');
 }
