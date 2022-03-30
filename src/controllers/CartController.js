@@ -58,9 +58,9 @@ exports.pay = async (req, res, next) => {
     try{    
         if(!req.query.price) throw '400';
         if(!req.session.user) throw 'Vui lòng đăng nhập';
-        var partnerCode = "MOMOOYTV20220329";
-        var accessKey = "N5hLwVZx2dd5pacM";
-        var secretkey = "PkOdA424sFACM51EqjYoPogGVYEBkm8L";
+        var partnerCode = "MOMOORT320220328";
+        var accessKey = "TKTFTiCBGFBqRuYc";
+        var secretkey = "9teO31VMuchzAQcXJydcjRPwiTk9sBjK";
         var requestId = partnerCode + new Date().getTime();
         var orderId = requestId;
         var orderInfo = "pay_with_MoMo";
