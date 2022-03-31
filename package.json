@@ -36,6 +36,7 @@
     "crypto": "^1.0.1",
     "firebase": "^9.6.10",
     "firebase-admin": "^10.0.2",
-    "https": "^1.0.0"
+    "https": "^1.0.0",
+    "nodemon": "^2.0.15"
   }
 }
