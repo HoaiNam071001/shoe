@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/index.js",
+    "start": "node src/index.js",
     "stop": "taskkill -f -im node.exe",
     "scss": "sass src/resources/scss/app.scss:src/public/css/app.css src/resources/scss/admin/app.scss:src/public/css/admin/app.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -26,11 +26,8 @@
     "express-validator": "^6.12.1",
     "material-icons": "^1.10.2",
     "method-override": "^3.0.0",
-    "mysql": "^2.18.1",
     "node-sass": "^6.0.1",
-    "nodemon": "^2.0.12",
     "password-hash": "^1.2.2",
-    "sass": "^1.43.4",
     "short-uuid": "^4.2.0"
   },
   "dependencies": {
